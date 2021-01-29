@@ -4,5 +4,6 @@ const array2 = [1, 2, 3, 4];
 
 array2.reverse()
 
+
 console.log("reverse",array2);
 
