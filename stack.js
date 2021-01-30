@@ -23,17 +23,39 @@ class Stack {
     console.log(`top element is ${this.items[this.count - 1]}`);
     return this.items[this.count - 1];
   }
+
+  isEmpty() {
+    console.log(this.count == 0 ? "Stack is empty" : "Stack is not empty");
+    return this.count == 0;
+  }
+
+  size() {
+    console.log(`${this.count} elements in stack`);
+    return this.count;
+  }
+
+  print() {
+    let string = "";
+    for (let i = 0; i < this.count; i++) {
+      string += this.items[i] + " ";
+    }
+    return string
+  }
 }
 
 const stack = new Stack();
+
+stack.isEmpty();
 
 stack.push(100);
 stack.push(200);
 stack.push(300);
 
-// stack.pop();
-// stack.pop();
+console.log(stack.print())
 
-console.log(stack.peek())
+stack.pop();
+
+console.log(stack.print())
 
 
+stack.peek();
