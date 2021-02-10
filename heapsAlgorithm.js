@@ -14,7 +14,6 @@ const getPermutations = (arr) => {
     }
 
     generate(n - 1, heapArr);
-
     for (let i = 0; i < n - 1; i++) {
       if (n % 2 === 0) {
         swapInPlace(heapArr, i, n - 1);
@@ -31,4 +30,5 @@ const getPermutations = (arr) => {
   return output;
 };
 
-console.log(getPermutations([1, 2, 3, 4]));
+
+console.log(getPermutations([1, 2, 1]));
