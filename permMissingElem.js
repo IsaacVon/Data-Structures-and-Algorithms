@@ -1,4 +1,6 @@
 function solution(A) {
+  if (A.length <=1) return 1
+
   let sortedArray = A.sort(function (a, b) {
     return a - b;
   });
@@ -9,4 +11,4 @@ function solution(A) {
   }
 }
 
-console.log(solution([2, 3, 1, 5]));
+console.log(solution([1]));
